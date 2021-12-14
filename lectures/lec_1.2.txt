@@ -1,0 +1,42 @@
+web application
+
+(HTML pages) + CSS  --> static website
+HTML + CSS + Javascript --> dynamic website
+
+client-server
+browser --- server(comparatively more powerful machine. to entertain request coming from client)
+
+
+
+Javascript
+
+- open source, lightweight, interpreted, JIT compilation and first class functions
+- brings interactivity into my web applications
+
+
+Few Terminologies-
+1) interepretation vs compilation
+
+interpreation -- python, javascript
+playwithmydog(){
+get two balls
+throw one ball
+jump on second
+}
+
+compilation -- java,c,c++
+
+mycode.java ----->compiled -----> mycode.class file -----> JRE ------> execute
+
+playwithmydog(){
+get two balls
+throw one ball
+jump on second
+}
+
+2)
+
+
+
+
+

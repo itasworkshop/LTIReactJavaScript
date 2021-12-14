@@ -1,0 +1,23 @@
+React Development React
+
+Software
+1. React Developer tool - chrome extension
+2. Advanced REST client - chrome extension
+3. Node download
+https://nodejs.org/en/download/
+
+->node
+->npm
+4. verify these
+node -v
+npm -v
+5. install npx
+npm install -g npx
+npx -v
+
+6. create react app
+npm install create-react-app
+npx create-react-app concepts
+
+7. Get visual studio
+https://code.visualstudio.com/

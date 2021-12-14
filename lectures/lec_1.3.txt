@@ -1,0 +1,194 @@
+Static typed language vs dynamic typed language
+static --> type of variable, once you create a variable with some type it will that type only.
+x int
+x =10;
+x ="RAM"; //error
+
+c,c++ and java
+
+Dynamic typed language
+dynamically decides type of variable based on current assignment.
+var x = 10;
+
+console.log("hello world");
+console.log(x);
+
+x  = "Praveen";
+console.log(x);
+
+x = false;
+console.log(x);
+
+
+y = 20;
+
+console.log(y);
+
+//three ways of creating a variable, they have different scope
+var z = 5;
+let i = 8;
+const j = 10;
+
+console.log(z);
+console.log(i);
+console.log(j);
+
+var x= 10;
+var y = 20;
+c = x+y;
+//console.log(x);
+//console.log(y);
+
+//console.log("Result is ",c);
+//console.log("Result is "+c);
+//console.log(c+"Result is ");
+
+//console.log("35"+c);
+//console.log(c+"35");
+
+//c++;
+c = "35";
+console.log(c++);
+console.log(++c);
+//console.log(++"35");
+
+//function --> named block which may or may not accept parameters ,perform calculation and gives output/returns output.
+var x= 10;
+var y = 20;
+c = x+y;
+
+console.log("Result is ",c);
+
+
+function addition(a,b){
+  result  = a+b;
+  console.log(result);
+}
+
+addition(45,65);
+
+//return value --> if we want to use in further calculation.
+var x= 10;
+var y = 20;
+c = x+y;
+
+console.log("Result is ",c);
+
+
+function addition(a,b){
+  result  = a+b;
+  console.log(result);
+ 	return result;
+}
+
+//addition(45,65);
+
+console.log(addition(100,200)+c);
+
+
+//first class function.
+
+var add = function addition(a,b){
+  result  = a+b;
+ 	return result;
+}
+
+//console.log(addition(100,200));
+
+//var add = addition
+console.log(add);
+console.log(add(23,46));
+
+//arrow function.
+
+var add = (a,b) => {
+  result  = a+b;
+ 	return result;
+}
+
+//console.log(addition(100,200));
+
+//var add = addition
+console.log(add);
+console.log(add(23,46));
+
+//if-else
+
+c = 20
+
+if(c <= 15){
+  console.log("yes it is true.");
+}else if(c>=200){
+  console.log("no its not.");
+}else{
+  console.log("no match found.")
+}
+
+//Loops --> Doing something repeatedly
+
+
+//while loops
+var x = 0;
+
+while(x <= 5){
+  console.log("x is "+ x);
+  x++;
+}
+
+//do-while loops
+//at least execute ones because it checks condition //after 
+var y = 0;
+
+do{
+  console.log("y is "+ y);
+  y++;
+}while(y <=-2)
+
+//for loop
+for (let i=0;i<=5;i++){
+  console.log("i is "+i);
+}
+
+//Array -- collection of items may or may not be of similar type
+
+x = [1,2,3,4,5];
+
+console.log(x);
+
+y = [11,"Raj",true,{}]
+
+console.log(y);
+
+
+y = [11,"Raj",true,{}]
+
+console.log(y[1]);
+
+for(let i=0; i<= y.length;i++){
+  console.log(y[i])
+}
+
+//JSON
+
+var student = {rollno:101,name:"Rajesh",marks:75};
+
+console.log(student);
+console.log(student.rollno);
+console.log(student.name);
+
+
+1. create a grade calculator for student grade. if a student score 90-100 --> Grade A, 80-90 --> B, 70-80 --> C, otherwise failed.
+2. List all the students who scored grade A
+[{"rollno": 101, "name": "Tommy", "grade": "A"},
+{"rollno": 102, "name": "John", "grade": "A"},
+{"rollno": 103, "name": "Sam", "grade": "B"},
+{"rollno": 104, "name": "Rajeev", "grade": "C"},
+{"rollno": 105, "name": "Rajesh", "grade": "D"},
+{"rollno": 106, "name": "Suraj", "grade": "A"}]
+
+
+
+
+
+
+
