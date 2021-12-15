@@ -9,3 +9,4 @@ What changes came into existance from ES5 to ES6?
 3. function expression/renaming function
 4. Arrow function
 5. multiline string
+6. Better support for oops --class were introduced -it had support using prototype and function

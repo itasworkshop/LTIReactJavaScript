@@ -1,0 +1,144 @@
+OOPs in JavaScript
+
+JS supports oops.
+
+class --> template or blueprint for creating objects
+Empty enquiry form --> template --> common for everyone
+
+object --> real world entities
+1. attibutes/properties
+2. behaviour/functionality
+
+fill values in form --> represents real world entity
+name --
+contact --
+purpose --
+
+class Student9{
+  
+  constructor(name,rollno){
+    this.name = name;
+  	this.rollno = rollno;
+  }
+  
+  getIntro(){
+    console.log("hi this is "+this.name+" and my rollno is "+ this.rollno);
+  }
+}
+
+var st1 = new Student9("Rajesh",101); //constructor are used to initialise objects
+var st2 = new Student9("Suraj",102);
+var st3 = new Student9("John",103);
+st1.getIntro();
+st2.getIntro();
+
+//class are also created like function internally
+
+class Person{
+  
+}
+
+console.log(typeof Person)
+
+st3.getIntro();
+
+
+class variable vs instance variable --ES6 no class variable?
+
+
+JavaScript is a prototype based language
+//constructor function
+
+function Person1(name,rollno){
+  this.name = name;
+  this.rollno = rollno;
+}
+
+Person1.prototype.greetMe = function(){
+  console.log("hi this is "+this.name+" and my rollno is "+ this.rollno);
+}
+
+var p1 = new Person1("Jimmy",123);
+console.log(p1.name);
+console.log(p1.rollno);
+p1.greetMe();
+
+//Inheritance
+
+class Calculator4{
+  
+  constructor(x,y){
+    this.x = x;
+    this.y = y;
+  }
+  
+  addition(){
+    console.log("Addition is "+(this.x+this.y));
+  }
+  
+ 	subtraction(){
+    console.log("Subtraction is "+(this.x-this.y));
+  }
+  
+}
+
+var calc = new Calculator4(40,30);
+calc.addition();
+calc.subtraction();
+
+
+class ScientificCalculator1 extends Calculator4{
+  
+  constructor(x,y,z){
+    //super means parent object
+    super(x,y); //call to parent constructor
+    this.z = z;
+  }
+  
+  calcVolume(){
+    console.log("Volume is "+(this.x*this.y*this.z));
+  }
+  
+}
+
+var sntcalc = new ScientificCalculator(70,60,50);
+sntcalc.addition();
+sntcalc.subtraction();
+sntcalc.calcVolume();
+
+
+//Array map function
+
+var myarr = [1,2,3,4,5];
+
+console.log(myarr);
+
+for(let i=0;i<=myarr.length;i++){
+  console.log(myarr[i]**2);
+}
+
+var newarr= myarr.map( i => i**2);
+
+console.log(newarr);
+
+//Array reduce function
+
+var result = 0;
+
+for(let i=0;i<myarr.length;i++){  
+  result = result + myarr[i];
+ // console.log(result);
+}
+
+
+console.log(result);
+
+var myarr = [1,2,3,4,5];
+
+console.log(myarr.reduce((i,j) => i+j));
+
+//Array filter function
+
+var myarr = [1,2,3,4,5];
+
+console.log(myarr.filter( i => i%2 == 0));
