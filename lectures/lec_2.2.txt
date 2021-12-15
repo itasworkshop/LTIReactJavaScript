@@ -1,0 +1,11 @@
+ECMA script - standard for JS
+
+ES5 - old one
+ES6 or ECMA Script 2015 - new one with major revision of JS
+
+What changes came into existance from ES5 to ES6?
+1. let was introduced.
+2. const was introduced.
+3. function expression/renaming function
+4. Arrow function
+5. multiline string

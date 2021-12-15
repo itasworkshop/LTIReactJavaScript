@@ -1,0 +1,81 @@
+ES6 changes
+
+undefined
+variable exists but its not defined.
+var x //declarartion
+console.log(x);
+
+1. Redecalaration
+var can be redeclared but let can not be redeclared.
+var z; //declaring z
+
+var z = 20;
+
+
+console.log(z);
+
+2. var is function scope while let and const block scope.
+function printMe(){
+  let r = 10;
+  var p = 50;  
+  
+  console.log("r is "+r);
+  console.log("p is "+p);
+  
+  {
+    let o = 60;
+  	var e = 70;  
+    
+    console.log("o is "+o);
+  	console.log("e is "+e);
+  }
+  	//console.log("o is "+o);
+  	console.log("e is "+e);
+  
+}
+
+printMe();
+
+//constant value, declare and assign in one step, no redeclare
+//block scope
+const d = 40;
+
+//d= 10; wrong to assign after declare
+
+d = 55;
+
+console.log(d);
+
+
+function expression/renaming
+var func = function addition(x,y){
+  console.log(x+y);
+}
+
+func(20,30); //renamed
+addition(10,20); //error
+
+Arrow Function
+var func = function addition(x,y){
+  console.log(x+y);
+}
+
+func(20,30);
+//addition(10,20);
+
+
+var result1 = (i,j) => {console.log(i+j)}
+console.log(result1(5,6));
+
+Multiline string
+name = `rajeshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+
+
+
+`
+
+;
+
+
+console.log(name);

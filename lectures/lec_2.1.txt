@@ -1,0 +1,33 @@
+Scope
+
+local scope- life of x exist inside funcion only
+function printMe(x){
+  console.log("hello from ",x);
+}
+
+printMe(45);
+printMe("Rajesh");
+
+console.log(x); //x is not defined
+
+var x =10;
+
+function printMe(x){
+  console.log("hello from ",x);
+}
+
+printMe(45);
+printMe("Rajesh");
+
+console.log(x);
+
+const x =10;
+
+function printMe(x){
+  console.log("hello from ",x);
+}
+
+printMe(45);
+printMe("Rajesh");
+
+console.log(x);
