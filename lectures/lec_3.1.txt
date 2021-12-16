@@ -1,0 +1,124 @@
+ES6 Operators
+
+1) ... --> Rest Operator and Spread Operator
+
+function add(x,y){
+  var result1 = 0;
+  result1 = x+y;
+  return result1;
+}
+
+console.log(add(45,35,25));
+
+//Rest Operator -- collecting all remaining elements
+
+function addNew(...args){
+  var result2 = 0;
+  
+  for (let arg of args) result2 += arg;
+  
+  return result2;
+}
+
+console.log(addNew(23,34,45,56));
+
+2) Spread Operator
+spreads all items and put one by one
+
+var arr = [5,6,7,8,4,5];
+var newarr = ["Rajesh","Suraj"];
+
+var latest1 = [arr, newarr];
+var latest2 = [...arr, ...newarr];
+
+console.log(latest1);
+console.log(latest1.length);
+
+console.log(latest2);
+console.log(latest2.length);
+
+var arr = [5,6,7,8,4,5];
+var newarr = [...arr,"Rajesh","Suraj"];
+
+console.log(newarr);
+
+
+
+function add(x,y,z){
+  return x+y+z;
+}
+
+console.log(add(...arr));
+
+//Rest vs Arguments object
+ES6 brought rest parameter
+
+function add1(x,y){
+  var result1 = 0;
+ // result1 = x+y;
+  //result1 = arguments[0]+arguments[1]+arguments[2];
+  console.log(arguments);
+  
+  for (let i of arguments){
+    result1 += i;
+  }
+  return result1;
+}
+
+console.log(add1(45,35,25));
+
+function add2(...args){
+  var result1 = 0;
+ // result1 = x+y;
+  //result1 = arguments[0]+arguments[1]+arguments[2];
+  console.log(args);
+  
+  for (let i of args){
+    result1 += i;
+  }
+  return result1;
+}
+
+console.log(add2(45,35,25));
+
+
+Two more Loops
+1) for/of loop --> iterable
+var myarr = [2,3,5,7,8,9];
+
+for (let i of myarr){
+  console.log(i);
+}
+
+var students = [{"rollno": 101, "name": "Tommy", "grade": "A"},
+{"rollno": 102, "name": "John", "grade": "A"},
+{"rollno": 103, "name": "Sam", "grade": "B"},
+{"rollno": 104, "name": "Rajeev", "grade": "C"},
+{"rollno": 105, "name": "Rajesh", "grade": "D"},
+{"rollno": 106, "name": "Suraj", "grade": "A"}];
+
+for (let i of students){
+  console.log(i.name);
+}
+
+name = "Rajesh Singh";
+
+for (let i of name){
+  console.log(i);
+}
+
+// 2) for/in loop --> for object
+var student = {"rollno": 101, "name": "Tommy", "grade": "A"};
+
+for (let i in student){
+  console.log(i);
+}
+
+
+for/of -iterable whereas for/in as object
+name = "Rajesh Singh";
+
+for (let i in name) console.log(name[i]);
+
+for (let i of name) console.log(i);
+

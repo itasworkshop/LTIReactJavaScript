@@ -142,3 +142,15 @@ console.log(myarr.reduce((i,j) => i+j));
 var myarr = [1,2,3,4,5];
 
 console.log(myarr.filter( i => i%2 == 0));
+
+
+[17:46] Praveen (Guest)
+    2. Check if given matrix is identical matrix or not?
+​[17:46] Praveen (Guest)
+    2*2
+​[17:46] Praveen (Guest)
+    3*3
+​[17:48] Praveen (Guest)
+    3. check for palindrom?
+​[17:50] Praveen (Guest)
+    4. create one computer class and two child classes laptop and desktop with some meaningful attributes and behavior to demonstrate inheritance.
