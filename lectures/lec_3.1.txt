@@ -122,3 +122,110 @@ for (let i in name) console.log(name[i]);
 
 for (let i of name) console.log(i);
 
+//return new line --> undefined
+function getResults1(){
+  var a = 5;
+  return a;
+}
+
+console.log(getResults1());
+
+function getResults2(){
+  var a = 5;
+  return 
+  a;
+}
+
+console.log(getResults2());
+
+//ES6 function -- returm ,ultiple items
+
+function getResults1(){
+  var a = 5;
+  return a;
+}
+
+console.log(getResults1());
+
+function getResults2(){
+  var a = 5;
+  return 
+  a;
+}
+
+console.log(getResults2());
+
+
+function getResults3(){
+  var a = 5;
+  return {
+  	key:a
+  };
+}
+
+console.log(getResults3());
+
+//ES6 function -- returm ,ultiple items
+
+function getResults1(){
+  var a = 5;
+  var b = 10;
+  return a,b;
+}
+
+console.log(getResults1());
+
+function getResults2(){
+  var a = 5;
+  var b = 10;
+  return a,
+  b;
+}
+
+console.log(getResults2());
+
+
+function getResults3(){
+  var a = 5;
+  var b = 10;
+  return {
+  	key1:a,
+    key2:b
+  };
+}
+
+console.log(getResults3());
+
+
+//ES6 function -- returm ,ultiple items
+
+function getResults3(){
+  var a = 5;
+  var b = 10;
+  return {
+  	key1:a,
+    key2:b
+  };
+}
+
+//ES6 destructing object
+const {key1,key2} = getResults3();
+
+console.log(key1);
+console.log(key2);
+
+//ES6 function -- returm ,ultiple items
+
+function getResults3(){
+  var a = 5;
+  var b = 10;
+  return [
+  	a,b
+  ];
+}
+
+//ES6 destructing array
+const [key3,key4] = getResults3();
+
+console.log(key3);
+console.log(key4);
