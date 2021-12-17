@@ -1,0 +1,36 @@
+React concepts
+
+--> Angular --> Framework --> more rules and less customisation of underlying layers
+--> React --> Library
+
+React Component
+basic building block is component
+
+Types:-
+function based component
+class based component
+
+DOM --> document object model
+consider html pages as document object for reading ,manipulating web pages --> brings interactivity.
+HTML vs DOM
+1. DOM is modified by javascript.
+2. browser automatically fixes error in source code to show some UI in browser.
+
+
+open element for your HTML --> that shows your DOM.
+open console and try to change something in DOM using js
+
+document.body.style.backgroundColor = 'blue';
+
+It will change background color and respective elements property.
+
+
+
+DOM changes in React
+
+React DOM compares the element and its children to the previous one, applies only necessary changes into DOM.
+
+example- tick example
+
+
+JSX --syntax extension of javascript
