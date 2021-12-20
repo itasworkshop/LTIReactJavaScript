@@ -1,0 +1,60 @@
+React Router
+react does not provide any built in router
+we can use react-router-dom
+
+npm install react-router-dom axios
+
+1. BrowserRouter --> which gives pretty URL
+
+/home
+2. Routes --> switching between routes/ collection of Route
+3. Route --> individual routes
+
+
+Javascript behaves synchronoulsy
+sometimes we need to achive asynchronous behaviour, we use async,await
+
+promises --> 
+//to bring asynchronous behaviour in js
+
+var promise = new Promise(function(resolve,reject){
+  console.log("Hello from promise");
+  
+  if(false){
+    resolve();
+  }else{
+    reject();
+  }
+});
+
+promise.then( function () {
+  console.log("promise fulfilled.");
+}).catch(function () {
+  console.log("Something went wrong.");
+})
+
+async/await --> extension of promises.
+async -->
+//async keyword
+//it always returns a value, if it does not return js automatically //wraps it in promise and resolves.
+
+const getData = async() => {
+  var data = {name:"Rajesh"};
+  return data;
+}
+
+
+getData().then(data => console.log(data));
+
+await -->
+//async keyword
+//it always returns a value, if it does not return js automatically //wraps it in promise and resolves.
+
+//await -- wait untill resolves
+const getData1 = async() => {
+  var data = await {name:"Rajesh"};
+  return data;
+}
+
+
+getData1().then(data => console.log(data));
