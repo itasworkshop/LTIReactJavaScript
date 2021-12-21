@@ -1,0 +1,28 @@
+Redux --> "state container"
+
+predictable state container for my js application
+
+immutable object has global state
+
+1. why redux?
+generally we have state available at component level not global level
+so we use Redux to manage state at global level
+
+2. can i use contextAPI? to manage my state -yes we can use but redux is better option for bigger application and better centralised management of global state.
+
+3. terminology
+1) Actions - sending data to redux store.
+2) Store - state,object live in store
+3) Reducers - immutable , they take state and action and return copy of the entire state
+4) Dispatch - methos to update redux state
+5) connect - react to redux
+6) container - connected components
+
+4. Redux -->
+redux --> core redux library
+react redux --> react specific bindings
+redux dev tool extenions --> chrome extension
+
+
+
+
